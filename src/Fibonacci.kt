@@ -1,5 +1,5 @@
 fun main() {
-    for (i in 1..10) println(fibonacci(i))
+     for (i in 1..10) println(fibonacci(i))
 }
 
 fun fibonacci(number: Int): Int {
