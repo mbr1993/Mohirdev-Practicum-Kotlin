@@ -1,8 +1,8 @@
-package invantoryManagemnt
+package inventoryManagement
 
 fun String.getArguments(command: String): List<Any>? {
-    val commands = command.split(" *".toRegex()).toMutableList()
-    val inputs = split(" *".toRegex()).toMutableList()
+    val commands = command.split("  *".toRegex()).toMutableList()
+    val inputs = split("  *".toRegex()).toMutableList()
 
     commands.forEachIndexed { index, s ->
         if (s.startsWith("?").not() || s.contains("|").not()) {
